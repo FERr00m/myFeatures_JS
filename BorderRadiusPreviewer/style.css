@@ -1,0 +1,60 @@
+#block {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(29, 78, 192);
+  transition: all 1s;
+  margin-top: 30px;
+}
+
+.prop {
+  position: absolute;
+  font-weight: bolder;
+  color: darkred;
+  font-size: x-large;
+}
+
+#right-top{
+  right: 0;
+}
+
+#left-bottom{
+  bottom: 0;
+}
+
+#right-bottom{
+  bottom: 0;
+  right: 0;
+}
+
+#property {
+  padding: 10px;
+}
+
+#property:focus {
+  border: 3px solid rgb(0, 4, 226);
+  background-color: rgb(148, 102, 148);
+}
+
+#btn {
+  position: relative;
+}
+
+#btn:before {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: 'Скопировано!';
+  transition: all 0.5s;
+}
+
+#btn.active:before {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: 'Скопировано!';
+}

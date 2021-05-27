@@ -58,8 +58,7 @@ const calculator = () => {
         if (target.closest('.digit')) {
 
           if (output.textContent === '0' || flag) {
-            
-            
+
             output.textContent = '';
             flag = false;
             // memoryDigitFirst = memoryDigit;
